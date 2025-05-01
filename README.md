@@ -24,49 +24,29 @@ Keep it simple — just like a real yes, in code the easiest way to express a YE
 
 #### cURL
 ```bash
-curl  https://mac-hills.github.io/yes-as-a-service/request.json 
+curl  https://mac-hills.github.io/yes-as-a-service/yes.json  
 ```
+returns: `{ "response": true }`
+
+If you really need a YES you can also:
+
+```bash
+curl  https://mac-hills.github.io/yes-as-a-service/yes 
+```
+returns: `YES`
+
+If a simple yes will do:
+
+```bash
+curl  https://mac-hills.github.io/yes-as-a-service/!no 
+```
+returns: `yes`
 
 #### JavaScript
 ```js
-fetch('https://mac-hills.github.io/yes-as-a-service/request.json')
+fetch('https://mac-hills.github.io/yes-as-a-service/yes.json')
   .then(res => res.json())
   .then(json => console.log(json)); // { "response": true }
-```
-
-#### OkHttp (Java Virtual Machine & Android) - written in Kotlin
-```
-val client = OkHttpClient()
-val request = Request.Builder()
-    .url('https://mac-hills.github.io/yes-as-a-service/request.json')
-    .build()
-
-client.newCall(request).enqueue(object : Callback {
-    override fun onFailure(call: Call, e: IOException) {
-        // Do something with your error
-    }
-
-    override fun onResponse(call: Call, response: Response) {
-        // do something with the response
-    }
-})
-```
-
-#### iOS
-```
-let session = URLSession.shared
-let requestUrl = URL(string: "https://mac-hills.github.io/yes-as-a-service/request.json")!
-
-session.dataTask(with: requestUrl, completionHandler: { data, response, error in
-    if let error = error {
-        print(error)
-        return
-    }
-    
-    guard let data = data else { return }
-    
-    // Do something with the response
-}).resume()
 ```
 
 ---
