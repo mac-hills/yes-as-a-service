@@ -32,27 +32,15 @@ Keep it simple — just like a real yes, in code the easiest way to express a YE
 
 #### cURL
 ```bash
-curl https://github.io/mac-hills/yes-as-a-service/
-```
-or
-
-```bash
-curl https://github.io/mac-hills/yes-as-a-service/!no
+curl https://mac-hills.github.io/yes-as-a-service/
 ```
 
 #### JavaScript
 ```js
-fetch('https://github.io/mac-hills/yes-as-a-service/)')
+fetch('https://mac-hills.github.io/yes-as-a-service/)')
   .then(res => res.json())
   .then(json => console.log(json)); // { "response": true }
 ```
-or
-```js
-fetch('https://github.io/mac-hills/yes-as-a-service/!no)')
-  .then(res => res.json())
-  .then(json => console.log(json)); // { "response": true }
-```
-
 
 ---
 
