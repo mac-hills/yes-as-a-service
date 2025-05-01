@@ -38,7 +38,7 @@ fetch('https://mac-hills.github.io/yes-as-a-service/request.json')
 ```
 val client = OkHttpClient()
 val request = Request.Builder()
-    .url("https://mac-hills.github.io/yes-as-a-service/request.json")
+    .url('https://mac-hills.github.io/yes-as-a-service/request.json')
     .build()
 
 client.newCall(request).enqueue(object : Callback {
@@ -51,6 +51,7 @@ client.newCall(request).enqueue(object : Callback {
     }
 })
 ```
+
 #### iOS
 ```
 let session = URLSession.shared
