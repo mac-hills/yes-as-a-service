@@ -1,14 +1,6 @@
 # Yes-as-a-Service
 
-In a world full of decisions, doubt, and hesitation, **YES** is the beacon of positivity, commitment, and opportunity. Sometimes what we truly need is an enthusiastic, unambiguous **YES** — and this service provides exactly that, **FREE OF CHARGE!**
-
-Sometimes the only possible answer is YES:
-
-- It's **clearer** than silence.
-- It's **stronger** than a vague "maybe".
-- It's **kinder** than a fake no-show promise.
-
-**Yes-as-a-Service** is for those who believe in affirmation, action, and making life happen.
+Sometimes what we truly need is an enthusiastic, unambiguous **YES** — and this service provides exactly that, **FREE OF CHARGE!**
 
 ---
 
@@ -32,27 +24,49 @@ Keep it simple — just like a real yes, in code the easiest way to express a YE
 
 #### cURL
 ```bash
-curl https://github.io/mac-hills/yes-as-a-service/
-```
-or
-
-```bash
-curl https://github.io/mac-hills/yes-as-a-service/!no
+curl  https://mac-hills.github.io/yes-as-a-service/request.json 
 ```
 
 #### JavaScript
 ```js
-fetch('https://github.io/mac-hills/yes-as-a-service/)')
-  .then(res => res.json())
-  .then(json => console.log(json)); // { "response": true }
-```
-or
-```js
-fetch('https://github.io/mac-hills/yes-as-a-service/!no)')
+fetch('https://mac-hills.github.io/yes-as-a-service/request.json')
   .then(res => res.json())
   .then(json => console.log(json)); // { "response": true }
 ```
 
+#### OkHttp (Java Virtual Machine & Android) - written in Kotlin
+```
+val client = OkHttpClient()
+val request = Request.Builder()
+    .url("https://mac-hills.github.io/yes-as-a-service/request.json")
+    .build()
+
+client.newCall(request).enqueue(object : Callback {
+    override fun onFailure(call: Call, e: IOException) {
+        // Do something with your error
+    }
+
+    override fun onResponse(call: Call, response: Response) {
+        // do something with the response
+    }
+})
+```
+#### iOS
+```
+let session = URLSession.shared
+let requestUrl = URL(string: "https://mac-hills.github.io/yes-as-a-service/request.json")!
+
+session.dataTask(with: requestUrl, completionHandler: { data, response, error in
+    if let error = error {
+        print(error)
+        return
+    }
+    
+    guard let data = data else { return }
+    
+    // Do something with the response
+}).resume()
+```
 
 ---
 
