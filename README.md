@@ -23,15 +23,20 @@ Just say YES — powered by !NO.
 Keep it simple — just like a real yes, in code the easiest way to express a YES is a boolean `true` value
 
  
-
 #### If you need a `YES`
 
 ```
 curl  https://mac-hills.github.io/yes-as-a-service/yes 
 ```
 
+#### Or a simple `Yes`
 
-#### If a simple `yes` will do
+```bash
+curl  https://mac-hills.github.io/yes-as-a-service/notnotyes 
+```
+
+
+#### If a plain `yes` will do
 
 ```bash
 curl  https://mac-hills.github.io/yes-as-a-service/!no 
