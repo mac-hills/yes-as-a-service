@@ -1,6 +1,6 @@
 # Yes-as-a-Service
 
-In a world full of decisions, doubt, and hesitation, **YES** is the beacon of positivity, commitment, and opportunity. While "No" is powerful, sometimes what we truly need is an enthusiastic, unambiguous **YES** — and this service provides exactly that, **FREE OF CHARGE!**
+In a world full of decisions, doubt, and hesitation, **YES** is the beacon of positivity, commitment, and opportunity. Sometimes what we truly need is an enthusiastic, unambiguous **YES** — and this service provides exactly that, **FREE OF CHARGE!**
 
 Sometimes the only possible answer is YES:
 
@@ -12,63 +12,47 @@ Sometimes the only possible answer is YES:
 
 ---
 
-### 🙋 Why YES?
+### Why Yes-as-a-Service?
 
-- **Clarity**  
-  Will you be there? → YES
+- Because !NO is YES, but it doesn’t look like a YES.
 
-- **Commitment**  
-  Can I count on you? → YES
+- Because !!YES is technically fine, but confusing.
 
-- **Optimism**  
-  Is there still a chance? → YES
+- Because NOT NOT YES is clever... but also a mouthful.
+
+- Because sometimes all you need is YES!
+
+Just say YES — powered by !NO.
 
 ---
 
-### 💡 How to Use
+### How to do it
 
-We keep it simple — just like a real yes:
+Keep it simple — just like a real yes, in code the easiest way to express a YES is a boolean `true` value:
 
 #### cURL
 ```bash
-curl https://yourdomain.com/request.json
+curl https://github.io/mac-hills/yes-as-a-service/
+```
+or
+
+```bash
+curl https://github.io/mac-hills/yes-as-a-service/!no
 ```
 
 #### JavaScript
 ```js
-fetch('https://yourdomain.com/request.json')
+fetch('https://github.io/mac-hills/yes-as-a-service/)')
+  .then(res => res.json())
+  .then(json => console.log(json)); // { "response": true }
+```
+or
+```js
+fetch('https://github.io/mac-hills/yes-as-a-service/!no)')
   .then(res => res.json())
   .then(json => console.log(json)); // { "response": true }
 ```
 
-#### Kotlin (Android / JVM)
-```kotlin
-val client = OkHttpClient()
-val request = Request.Builder()
-    .url("https://yourdomain.com/request.json")
-    .build()
-
-client.newCall(request).enqueue(object : Callback {
-    override fun onFailure(call: Call, e: IOException) {
-        // Handle error
-    }
-
-    override fun onResponse(call: Call, response: Response) {
-        // Handle YES
-    }
-})
-```
-
-#### iOS (Swift)
-```swift
-let session = URLSession.shared
-let url = URL(string: "https://yourdomain.com/request.json")!
-
-session.dataTask(with: url) { data, response, error in
-    guard let data = data, error == nil else { return }
-    // Handle YES
-}.resume()
-```
 
 ---
 
@@ -81,7 +65,7 @@ This project is also licensed under the Apache License 2.0.
 
 ---
 
-### 🎉 YES!
+### YES!
 
 If you’re reading this, you’re probably ready to say YES.  
 So... just do it. ✅
