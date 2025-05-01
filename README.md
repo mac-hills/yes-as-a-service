@@ -23,10 +23,11 @@ Just say YES — powered by !NO.
 Keep it simple — just like a real yes, in code the easiest way to express a YES is a boolean `true` value:
 
 #### cURL
+If you need it to be `true`, `yes.json` will do:
 ```bash
 curl  https://mac-hills.github.io/yes-as-a-service/yes.json  
 ```
-returns: `{ "response": true }`
+returns: `{ "yes": true }`
 
 If you really need a YES you can also:
 
