@@ -20,35 +20,30 @@ Just say YES — powered by !NO.
 
 ### How to do it
 
-Keep it simple — just like a real yes, in code the easiest way to express a YES is a boolean `true` value:
+Keep it simple — just like a real yes, in code the easiest way to express a YES is a boolean `true` value
 
-#### cURL
-If you need it to be `true`, `yes.json` will do:
-```bash
-curl  https://mac-hills.github.io/yes-as-a-service/yes.json  
+ 
+
+#### If you need a `YES`
+
 ```
-returns: `{ "yes": true }`
-
-If you really need a YES you can also:
-
-```bash
 curl  https://mac-hills.github.io/yes-as-a-service/yes 
 ```
-returns: `YES`
 
-If a simple yes will do:
+
+#### If a simple `yes` will do
 
 ```bash
 curl  https://mac-hills.github.io/yes-as-a-service/!no 
 ```
-returns: `yes`
 
-#### JavaScript
-```js
-fetch('https://mac-hills.github.io/yes-as-a-service/yes.json')
-  .then(res => res.json())
-  .then(json => console.log(json)); // { "response": true }
+
+#### If you need it to be `true`, `yes.json` to the rescue
+```bash
+curl  https://mac-hills.github.io/yes-as-a-service/yes.json  
 ```
+returns **{ "yes": true }**
+
 
 ---
 
